@@ -2,15 +2,19 @@
 
 Documentation on any Backend capabilities or changes made.
 
+Command to start the application: `docker-compose up`
+
 ---
 
-## 1. [New Feature]: Search products #142
+## 1. [New Feature]: Search products #142 [PENDING]
 
 - Not started (Frontend)
 
 ---
 
 ## 2. [New Feature]: Order API Endpoint #139 – [COMPLETED]
+
+Orders API End Point: http://localhost:3000/api/orders
 
 ### Summary
 
@@ -43,9 +47,9 @@ app/api/orders/route.ts
 
 ---
 
-## 3. [New Feature]: User Information Page #101
+## 3. [New Feature]: User Information Page #101 [PENDING]
 
-- Not started (Frontend)
+- Not started
 
 ---
 
@@ -68,19 +72,19 @@ Command to start the application in docker: `docker-compose up`
 
 ---
 
-## 5. [New Feature]: Filter products #89
+## 5. [New Feature]: Filter products #89 [PENDING]
 
 - Not Started
 
 ---
 
-## 6. [New Feature]: Improve product list page using cards. #84
+## 6. [New Feature]: Improve product list page using cards. #84 [PENDING]
 
 - Not Started
 
 ---
 
-## 7. [New Feature]: Improve product list page using cards. #84
+## 7. [New Feature]: Improve product list page using cards. #84 [PENDING]
 
 - Not Started
 
@@ -119,7 +123,7 @@ Ran `git commit -m "check working pre-commit"` — the pre-commit hook successfu
 
 ---
 
-# 9. [New Feature]: Improve the experience of searching for and viewing products #80
+# 9. [New Feature]: Improve the experience of searching for and viewing products #80 [PENDING]
 
 - Not started
 
@@ -127,10 +131,30 @@ Ran `git commit -m "check working pre-commit"` — the pre-commit hook successfu
 
 # 10. [Bug]: Error when trying to run storybook command #78 [COMPLETED]
 
- - The import path @/src/mock/large/products.json in app/products/page.tsx was incorrect due to a misconfigured alias. A new path alias has now been added: `@/*` maps to `./src/*`, enabling correct imports like @/mock/large/products.json.
+- The import path `@/src/mock/large/products.json` in `app/products/page.tsx` was incorrect due to a misconfigured alias. A new path alias has now been added: `@/*` maps to `./src/*`, enabling correct imports like `@/mock/large/products.json`.
 
 ---
 
+# 11. [New Feature]: improve workflow and code quality #75 [PENDING]
 
+- Not started
+
+---
+
+# 12. [Bug]: error when run pnpm storybook command #73 [COMPLETED]
+
+- Same issue (#10). Already resolved.
+
+---
+
+# 13. Add MongoDB as a container:  #59 [PENDING]
+
+- Not Started
+
+---
+
+# 14. Add Backend Database #57 [PENDING]
+
+---
 
 ---

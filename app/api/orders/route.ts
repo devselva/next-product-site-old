@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { validateOrder } from '@/src/utils/orders/validateOrders';
+import { validateOrder } from '@utils/orders/validateOrders';
 
 export async function GET() {
   return NextResponse.json([
