@@ -89,37 +89,48 @@ Command to start the application in docker: `docker-compose up`
 ## 8. [New Feature]: Enhance CI/CD with Pre-commit Hooks for Linting, Formatting, and Testing #82 [COMPLETED]
 
 ### Implemented Tools & Setup
+
 #### Husky (Pre-commit Hooks)
- - Initialized Husky in the project using `pnpm dlx husky-init`.
- - Configured `.husky/pre-commit` hook to automatically:
- - Run ESLint for linting and fixing issues.
- - Run Prettier to validate code formatting.
- - Run Jest to ensure all tests pass.
- - Ensures only clean, tested, and properly formatted code is committed.
+
+- Initialized Husky in the project using `pnpm dlx husky-init`.
+- Configured `.husky/pre-commit` hook to automatically:
+- Run ESLint for linting and fixing issues.
+- Run Prettier to validate code formatting.
+- Run Jest to ensure all tests pass.
+- Ensures only clean, tested, and properly formatted code is committed.
 
 #### ESLint
- - Installed eslint along with `eslint-config-next` and TypeScript plugin support.
- - Configured it to lint .ts and .tsx files with automatic fix support.
- - Ensures consistent code quality and catches common errors early.
+
+- Installed eslint along with `eslint-config-next` and TypeScript plugin support.
+- Configured it to lint .ts and .tsx files with automatic fix support.
+- Ensures consistent code quality and catches common errors early.
 
 #### Prettier
- - Added Prettier for consistent code formatting across the team.
- - Integrated with pre-commit hooks to prevent poorly formatted code from being committed.
+
+- Added Prettier for consistent code formatting across the team.
+- Integrated with pre-commit hooks to prevent poorly formatted code from being committed.
 
 #### Jest
- - Ensured that unit tests run automatically on each commit to prevent regressions.
- - Hooked into Husky pre-commit to ensure commits do not break functionality.
+
+- Ensured that unit tests run automatically on each commit to prevent regressions.
+- Hooked into Husky pre-commit to ensure commits do not break functionality.
 
 Ran `git commit -m "check working pre-commit"` — the pre-commit hook successfully triggered linting, formatting, and tests before the commit was finalized.
 
 ---
 
 # 9. [New Feature]: Improve the experience of searching for and viewing products #80
+
 - Not started
 
 ---
 
-# 10. [Bug]: Error when trying to run storybook command #78
-- Working
+# 10. [Bug]: Error when trying to run storybook command #78 [COMPLETED]
+
+ - The import path @/src/mock/large/products.json in app/products/page.tsx was incorrect due to a misconfigured alias. A new path alias has now been added: `@/*` maps to `./src/*`, enabling correct imports like @/mock/large/products.json.
+
+---
+
+
 
 ---
