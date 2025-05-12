@@ -2,12 +2,13 @@
 
 Documentation on any Backend capabilities or changes made.
 
---------------------------------------------------------------
+---
 
-## 1. [New Feature]: Search products #142 
+## 1. [New Feature]: Search products #142
+
 - Not started (Frontend)
 
---------------------------------------------------------------
+---
 
 ## 2. [New Feature]: Order API Endpoint #139 – [COMPLETED]
 
@@ -40,47 +41,85 @@ app/api/orders/route.ts
 2. Reusable, Typed Functions
    Each module contains reusable utility functions — such as input validation, data formatting, and helpers — scoped by feature. This makes logic composable and maintainable.
 
---------------------------------------------------------------
+---
 
 ## 3. [New Feature]: User Information Page #101
+
 - Not started (Frontend)
 
---------------------------------------------------------------
+---
 
 ## 4. [New Feature]: Docker local environment #91 [COMPLETED]
 
 ### Summary
 
 #### Docker Setup Progress
- - Installed Docker Desktop on the local machine.
- - Verified Docker installation and ensured the engine is running.
- - Created a Dockerfile to containerize the Next.js application using pnpm and Node.js base image.
- - Created a .dockerignore file to exclude unnecessary files and folders (e.g., node_modules, .git, .next) from being copied into the Docker image.
- - Built the Docker image using `docker build .`.
- - Resolved Docker build error by excluding node_modules in .dockerignore.
- - Created a docker-compose.yml to simplify running the local environment with a single command (docker-compose up).
- - Successfully ran the Next.js app inside a Docker container and confirmed it runs at http://localhost:3000.
+
+- Installed Docker Desktop on the local machine.
+- Verified Docker installation and ensured the engine is running.
+- Created a Dockerfile to containerize the Next.js application using pnpm and Node.js base image.
+- Created a .dockerignore file to exclude unnecessary files and folders (e.g., node_modules, .git, .next) from being copied into the Docker image.
+- Built the Docker image using `docker build .`.
+- Resolved Docker build error by excluding node_modules in .dockerignore.
+- Created a docker-compose.yml to simplify running the local environment with a single command (docker-compose up).
+- Successfully ran the Next.js app inside a Docker container and confirmed it runs at http://localhost:3000.
 
 Command to start the application in docker: `docker-compose up`
 
---------------------------------------------------------------
+---
 
 ## 5. [New Feature]: Filter products #89
- - Not Started
 
---------------------------------------------------------------
+- Not Started
+
+---
 
 ## 6. [New Feature]: Improve product list page using cards. #84
- - Not Started
 
---------------------------------------------------------------
+- Not Started
+
+---
 
 ## 7. [New Feature]: Improve product list page using cards. #84
- - Not Started
 
---------------------------------------------------------------
+- Not Started
 
-## 8. [New Feature]: Enhance CI/CD with Pre-commit Hooks for Linting, Formatting, and Testing #82
- - Working
-  
--------------------------------------------------------------
+---
+
+## 8. [New Feature]: Enhance CI/CD with Pre-commit Hooks for Linting, Formatting, and Testing #82 [COMPLETED]
+
+### Implemented Tools & Setup
+#### Husky (Pre-commit Hooks)
+ - Initialized Husky in the project using `pnpm dlx husky-init`.
+ - Configured `.husky/pre-commit` hook to automatically:
+ - Run ESLint for linting and fixing issues.
+ - Run Prettier to validate code formatting.
+ - Run Jest to ensure all tests pass.
+ - Ensures only clean, tested, and properly formatted code is committed.
+
+#### ESLint
+ - Installed eslint along with `eslint-config-next` and TypeScript plugin support.
+ - Configured it to lint .ts and .tsx files with automatic fix support.
+ - Ensures consistent code quality and catches common errors early.
+
+#### Prettier
+ - Added Prettier for consistent code formatting across the team.
+ - Integrated with pre-commit hooks to prevent poorly formatted code from being committed.
+
+#### Jest
+ - Ensured that unit tests run automatically on each commit to prevent regressions.
+ - Hooked into Husky pre-commit to ensure commits do not break functionality.
+
+Ran `git commit -m "check working pre-commit"` — the pre-commit hook successfully triggered linting, formatting, and tests before the commit was finalized.
+
+---
+
+# 9. [New Feature]: Improve the experience of searching for and viewing products #80
+- Not started
+
+---
+
+# 10. [Bug]: Error when trying to run storybook command #78
+- Working
+
+---
