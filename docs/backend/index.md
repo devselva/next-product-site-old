@@ -79,3 +79,8 @@ Command to start the application in docker: `docker-compose up`
  - Not Started
 
 --------------------------------------------------------------
+
+## 8. [New Feature]: Enhance CI/CD with Pre-commit Hooks for Linting, Formatting, and Testing #82
+ - Working
+
+-------------------------------------------------------------
