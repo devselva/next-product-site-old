@@ -156,5 +156,7 @@ Ran `git commit -m "check working pre-commit"` — the pre-commit hook successfu
 # 14. Add Backend Database #57 [PENDING]
 
 ---
+# 15. [New Feature]: REST API for Handling User Authentication #10 [IN-PROGRESS]
+- In Progress
 
 ---
